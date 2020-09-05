@@ -1,17 +1,21 @@
 "use strict";
 
-//alert('hello');
+const numberOfFilms = +prompt('Сколько фильмов вы посмотрели?', '');
 
-//const result = confirm("Are you here");
-//console.log(result);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
 
-//const ansver = prompt("Вам есть 18?","18");
-//console.log(ansver);
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оценете его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оценете его?', '');
 
-const answers = [];
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;   
 
-//answers[0] = prompt('What is your name?','');
-//answers[1] = prompt('What is your sorname?','');
-//answers[2] = prompt('How old are you?','');
-
-console.log(typeof(answers));
+console.log(personalMovieDB);
